@@ -1,18 +1,93 @@
 .main-city-container {
   .banner-container {
-    padding: 25px 25px 0;
-
     .banner {
       height: 300px;
       width: 100%;
+      border-radius: 0px 0px 10px 10px;
+      -moz-border-radius: 0px 0px 10px 10px;
+      -webkit-border-radius: 0px 0px 10px 10px;
+    }
+
+    .city-container {
+      color: #7364c5;
+      position: relative;
+      bottom: 285px;
+      left: 5%;
+      display: flex;
+      align-items: center;
+
+      .city {
+        margin-left: 10px;
+        font-size: 1.25rem;
+        font-weight: 500;
+      }
     }
   }
 
   .weather-info-city {
-  }
-}
+    width: 70px;
+    display: inline-block;
+    position: absolute;
+    top: 96px;
+    left: 0;
 
-@media (min-width: 576px) {
+    .weather-icon-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 60px;
+      background-color: #2f1f71;
+      border-radius: 0px 20px 20px 10px;
+      -moz-border-radius: 0px 20px 20px 10px;
+      -webkit-border-radius: 0px 20px 20px 10px;
+      position: relative;
+      z-index: 2;
+
+      img {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        position: relative;
+        left: -3px;
+      }
+
+      span {
+        color: white;
+        font-size: 0.55rem;
+        position: relative;
+        top: -8px;
+        left: -3px;
+      }
+    }
+
+    .weather-grades-container {
+      background: #7364c5;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      top: -15px;
+      z-index: 1;
+      border-radius: 0px 0px 20px 0px;
+      -moz-border-radius: 0px 0px 20px 0px;
+      -webkit-border-radius: 0px 0px 20px 0px;
+
+      span {
+        position: relative;
+        top: 5px;
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: white;
+
+        sup {
+          top: -10.5px;
+          font-size: 0.875rem;
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 992px) {
@@ -22,17 +97,12 @@
 
       .banner {
         height: 290px;
-        width: 100%;
         border-radius: 25px;
       }
 
       .city-container {
-        color: #7364c5;
-        position: relative;
         bottom: 220px;
         left: 8%;
-        display: flex;
-        align-items: center;
 
         .city {
           margin-left: 10px;
@@ -44,60 +114,26 @@
 
     .weather-info-city {
       width: 80px;
-      display: inline-block;
-      position: absolute;
       top: 110px;
-      left: 0;
 
       .weather-icon-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
         height: 80px;
-        background-color: #2f1f71;
-        border-radius: 0px 20px 20px 10px;
-        -moz-border-radius: 0px 20px 20px 10px;
-        -webkit-border-radius: 0px 20px 20px 10px;
-        position: relative;
-        z-index: 2;
 
         img {
-          display: inline-block;
           width: 65px;
           height: 65px;
-          position: relative;
-          left: -3px;
         }
 
         span {
-          color: white;
-          font-size: 0.55rem;
-          position: relative;
           top: -12px;
-          left: -3px;
         }
       }
 
       .weather-grades-container {
-        background: #7364c5;
         height: 85px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        top: -15px;
-        z-index: 1;
-        border-radius: 0px 0px 20px 0px;
-        -moz-border-radius: 0px 0px 20px 0px;
-        -webkit-border-radius: 0px 0px 20px 0px;
 
         span {
-          position: relative;
-          top: 5px;
           font-size: 2rem;
-          font-weight: 400;
-          color: white;
 
           sup {
             top: -13.5px;

@@ -1,1 +1,20 @@
-<p>forecast works!</p>
+<div class="forecast-container">
+  <h2>3 Days<span> Forecast</span></h2>
+
+  <div *ngFor="let day of daysForecastArray; let i = index" class="forecast-cards-container">
+    <div class="card-forecast mt-3" [ngClass]="{ 'firstDay': i == 0 }">
+      <div class="day-container">
+        <img [src]="day.weatherIcon" [alt]="day.weather" />
+
+        <div class="text-container">
+          <span class="day">{{ day.day }}</span>
+          <span class="weather">{{ day.weather }}</span>
+        </div>
+      </div>
+
+      <div class="temp-container">
+        <span>{{ day.maxTemp }}<sup>°</sup>/ {{ day.minTemp }}<sup>°</sup></span>
+      </div>
+    </div>
+  </div>
+</div>
