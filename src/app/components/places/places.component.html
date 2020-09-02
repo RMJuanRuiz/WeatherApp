@@ -1,1 +1,32 @@
-<p>places works!</p>
+<div class="places-container">
+    <div *ngFor="let city of citiesWeather" class="card-info-container">
+        <div class="main-info-container row">
+            <div class="col-3 img-container">
+                <img [src]="city.iconURL" [alt]="city.weather">
+            </div>
+            <div class="col-3 temp-info">
+                <span>{{city.temp}}<sup class="grades">°</sup><sup class="units">c</sup></span>
+            </div>
+            <div class="col-6 city-info">
+                <span class="city">{{city.name}}</span>
+                <span class="country">France</span>
+            </div>
+        </div>
+
+        <div class="additional-info-container">
+            <span>Humidity {{city.humidity}}%</span>
+            <span> {{city.name === 'Lyon' ? 'Northwest' : 'West'}}</span>
+            <span> {{city.name === 'Lyon' ? '8.3km/h' : '6.3km/h'}}</span>
+        </div>
+    </div>
+
+    <div class="card-add-locations-container mt-4">
+        <div class="button-container">
+            <button>Add locations</button>
+        </div>
+
+
+        <img src="../../../assets/img/building.png" alt="Buildings">
+    </div>
+
+</div>

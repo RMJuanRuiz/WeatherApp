@@ -8,7 +8,7 @@ export class WeatherService {
   private baseUrl: string = 'https://api.openweathermap.org/data/2.5';
   private appid: string = 'e4e291867db1b85d203011a59a2303f5';
 
-  constructor(private readonly _http: HttpClient) {}
+  constructor(private readonly _http: HttpClient) { }
 
   public getCityWeather(lat: number, lon: number) {
     const params = new HttpParams()
