@@ -1,0 +1,243 @@
+.locations-container{
+    margin-top: 40px;
+    .head-container{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 20px;
+
+        h2 {
+            font-weight: 500;
+            text-align: center;
+            margin-bottom: 0;
+
+            span {
+              font-weight: 300;
+            }
+        }
+    
+        .top-reviews{
+            display: flex;
+            align-items: center;
+            justify-content: end;
+
+            span{
+                font-size: 0.75rem;
+                color: grey;
+
+                &.material-icons{
+                    font-size: 0.875rem;
+                    margin-right: 4px;
+                }
+            }
+
+            .img-reviews{
+                margin-left: 6px;
+                display: flex;
+
+                img{
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 8px;
+                    margin-right: 1px;
+                }
+
+                .more-reviews{
+                    width: 24px;
+                    height: 24px;
+                    background: #7364c5;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 8px;
+
+                    span{
+                        color: white;
+                        font-size: 0.625rem;
+                    }
+                }
+            }
+            
+        }
+    
+    }
+
+    .cards-cities-container{
+        padding: 0 20px;
+
+        .main-city{
+            text-align: center;
+
+
+            img{
+                width: 75%;
+                height: auto;
+                border-radius: 35px;
+                margin-bottom: 10px;
+            }
+
+        }
+
+        .secondary-cities{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            img{
+                width: 75%;
+                border-radius: 25px;
+                margin-bottom: 10px;
+            }
+
+            .first-city{
+                text-align: center;
+
+                img{
+                    height: auto;
+                }
+            }
+
+            .second-city{
+                display: flex;
+                height: 100%;
+                text-align: center;
+                flex-direction: column;
+
+
+                .img-container{
+                    img{
+                        height: 100%;
+                        border-radius: 34px;
+                    }
+
+                    .img-description{
+                        position: absolute;
+                        top: 51%;
+                        left: 20%;
+                    }
+                }
+          
+
+
+                .add{
+                    width: 75%;
+                    height: 50px;
+                    background: #7364c5;
+                    display: flex;
+                    align-items: center;
+                    border-radius: 35px;
+                    justify-content: center;
+                    margin: 0 auto;
+                    margin-top: 10px;
+                    border: none;
+                    padding: 0;
+
+                    span{
+                        width: 70px;
+                        color: white;
+                    }
+
+                }
+            }
+        }
+
+        .img-description{
+            position: absolute;
+            top: 30px;
+            left: 20%;
+            display: flex;
+            align-items: baseline;
+            max-width: 80px;
+            text-align: left;
+
+            span{
+                font-size: 0.625rem;
+                color: white;
+
+                &.material-icons{
+                    position: relative;
+                    top: 2px;
+                    font-size: 0.75rem;
+                    margin-right: 6px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 992px) {
+    .locations-container{
+        margin-top: 0;
+        .head-container{
+            justify-content: space-between;
+            margin-bottom: 40px;
+            h2 {
+                font-size: 1.3rem;
+                text-align: left;
+            }
+        }
+
+        .cards-cities-container{
+            padding: 0;
+
+            .main-city{
+
+                img{
+                    width: 100%;
+                    height: 272px;
+                    margin-bottom: 0;
+                }
+               
+            }
+
+            .secondary-cities{
+                justify-content: space-between;
+
+                img{
+                    width: 100%;
+                    margin-bottom: 0;
+                }
+
+                .first-city{
+
+                    img{
+                        height: 80px;
+                    }
+                }
+
+                .second-city{
+                    height: 160px;
+                    flex-direction: row;
+
+                    .img-container{
+    
+                        .img-description{
+                            position: relative;
+                            top: -140px;
+                            left: 9%;
+                        }
+                    }
+
+                    .add{
+                        width: auto;
+                        border-radius: 50px;
+                        height: 160px;
+                        position: absolute;
+                        right: 14px;
+                        text-align: center;
+                        margin: 0;
+                    }
+                }
+            }
+
+            .img-description{
+                top: 22px;
+                left: 13%;
+            }
+        }
+  
+    }
+
+    
+}
