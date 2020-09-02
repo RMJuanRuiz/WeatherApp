@@ -1,0 +1,25 @@
+<div class="main-city-container">
+  <div class="banner-container">
+    <img
+      class="banner"
+      src="./../../../assets/img/BogotaBanner.jpg"
+      alt="Ciudad de Bogota de noche"
+    />
+
+    <div class="city-container">
+      <span class="material-icons"> location_on </span>
+      <span class="city">Bogotá</span>
+    </div>
+  </div>
+
+  <div class="weather-info-city">
+    <div class="weather-icon-container">
+      <img src="{{ weatherURL }}" alt="{{ weather }}" />
+      <span>{{ weather }}</span>
+    </div>
+
+    <div class="weather-grades-container">
+      <span>{{ cityTemp }}<sup>°c</sup></span>
+    </div>
+  </div>
+</div>
