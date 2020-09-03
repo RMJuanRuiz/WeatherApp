@@ -18,8 +18,8 @@
     
         .top-reviews{
             display: flex;
+            justify-content: flex-end;
             align-items: center;
-            justify-content: end;
 
             span{
                 font-size: 0.75rem;
@@ -171,7 +171,7 @@
         margin-top: 0;
         .head-container{
             justify-content: space-between;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
             h2 {
                 font-size: 1.3rem;
                 text-align: left;

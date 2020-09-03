@@ -33,4 +33,8 @@ export class PlacesComponent implements OnInit {
 
     this.citiesWeather.push(finalCity);
   }
+
+  public showAlert() {
+    alert('Coming soon! :)');
+  }
 }

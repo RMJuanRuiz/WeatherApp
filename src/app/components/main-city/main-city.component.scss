@@ -11,7 +11,7 @@
     .city-container {
       color: #7364c5;
       position: relative;
-      bottom: 285px;
+      bottom: 256px;
       left: 5%;
       display: flex;
       align-items: center;
@@ -48,6 +48,19 @@
       -moz-box-shadow: 12px -10px 18px 0px rgba(0,0,0,0.23);
       box-shadow: 12px -10px 18px 0px rgba(0,0,0,0.23);
 
+      &::before {
+        content: "";
+        position: absolute;
+        background-color: transparent;
+        bottom: 60px;
+        height: 50px;
+        width: 10px;
+        left: 0;
+        border-bottom-left-radius: 25px;
+        box-shadow: 0 25px 0 0 #2f1f71;
+      }
+
+
       img {
         display: inline-block;
         width: 40px;
@@ -81,6 +94,18 @@
       -moz-box-shadow: 12px 10px 18px 0px rgba(0,0,0,0.23);
       box-shadow: 12px 10px 18px 0px rgba(0,0,0,0.23);
 
+      &::before {
+        content: "";
+        position: absolute;    
+        background-color: transparent;
+        bottom: -50px;
+        height: 50px;
+        width: 10px;
+        left: 0;
+        border-top-left-radius: 25px;
+        box-shadow: 0 -25px 0 0 #7364c5;
+      }
+
       span {
         position: relative;
         top: 5px;
@@ -111,6 +136,11 @@
         bottom: 220px;
         left: 6%;
 
+        span{
+          &.material-icons{
+            font-size: 1.25rem;
+          }
+        }
         .city {
           margin-left: 10px;
           font-size: 1.25rem;
@@ -125,6 +155,10 @@
 
       .weather-icon-container {
         height: 80px;
+
+        &::before {
+          bottom: 80px;
+        }
 
         img {
           width: 65px;
