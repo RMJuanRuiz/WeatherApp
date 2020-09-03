@@ -20,6 +20,9 @@ export class ForecastComponent implements OnInit {
       'Thursday',
       'Friday',
       'Saturday',
+      'Sunday',
+      'Monday',
+      'Tuesday'
     ];
 
     this._weatherService
